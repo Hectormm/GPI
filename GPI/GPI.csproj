@@ -45,11 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articulos\AltaArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\AltaArticulos.Designer.cs">
+      <DependentUpon>AltaArticulos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Articulos\Articulos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Articulos\Articulos.Designer.cs">
       <DependentUpon>Articulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\ModificarCliente.Designer.cs">
+      <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Clientes\AltaCliente.cs">
       <SubType>Form</SubType>
@@ -89,8 +101,14 @@
     <Compile Include="Proveedores\Proveedores.Designer.cs">
       <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Articulos\AltaArticulos.resx">
+      <DependentUpon>AltaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Articulos\Articulos.resx">
       <DependentUpon>Articulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\ModificarCliente.resx">
+      <DependentUpon>ModificarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
