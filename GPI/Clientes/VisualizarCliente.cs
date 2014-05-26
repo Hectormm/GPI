@@ -16,5 +16,22 @@ namespace GPI.Clientes
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ModificarCliente pantalla = new ModificarCliente();
+            pantalla.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¿Quiere Eliminar el cliente seleccionado?");
+        }
     }
 }

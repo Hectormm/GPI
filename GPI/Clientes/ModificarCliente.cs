@@ -16,5 +16,16 @@ namespace GPI.Clientes
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cliente " + textBox2.Text + " modificado correctamente");
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
