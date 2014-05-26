@@ -149,6 +149,12 @@
     <EmbeddedResource Include="Articulos\VisualizarArticulo.resx">
       <DependentUpon>VisualizarArticulo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\MostrarAyuda.resx">
+      <DependentUpon>MostrarAyuda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
