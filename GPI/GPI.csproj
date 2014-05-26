@@ -63,6 +63,12 @@
     <Compile Include="Articulos\ModificarArticulo.Designer.cs">
       <DependentUpon>ModificarArticulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Articulos\VisualizarArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\VisualizarArticulo.Designer.cs">
+      <DependentUpon>VisualizarArticulo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes\AltaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Articulos\ModificarArticulo.resx">
       <DependentUpon>ModificarArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\VisualizarArticulo.resx">
+      <DependentUpon>VisualizarArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>

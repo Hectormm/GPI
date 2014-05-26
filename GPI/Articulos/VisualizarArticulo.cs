@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GPI
+namespace GPI.Articulos
 {
-    public partial class Articulos : Form
+    public partial class VisualizarArticulo : Form
     {
-        public Articulos()
+        public VisualizarArticulo()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }
