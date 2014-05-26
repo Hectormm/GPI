@@ -73,6 +73,16 @@ namespace GPI.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Help {
+            get {
+                object obj = ResourceManager.GetObject("Help", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icono_clientes2 {
             get {
                 object obj = ResourceManager.GetObject("icono_clientes2", resourceCulture);
@@ -96,6 +106,16 @@ namespace GPI.Properties {
         internal static System.Drawing.Bitmap proveedores_icon {
             get {
                 object obj = ResourceManager.GetObject("proveedores_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap System_Login_icon {
+            get {
+                object obj = ResourceManager.GetObject("System-Login-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

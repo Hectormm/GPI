@@ -29,10 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrincipalProveedores));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nifDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descuentoDefentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaCobroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.divisaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.baseDatosDataSet1 = new GPI.BaseDatosDataSet1();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -40,22 +49,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.baseDatosDataSet = new GPI.BaseDatosDataSet();
             this.baseDatosDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.baseDatosDataSet1 = new GPI.BaseDatosDataSet1();
-            this.proveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proveedorTableAdapter = new GPI.BaseDatosDataSet1TableAdapters.ProveedorTableAdapter();
-            this.nifDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descuentoDefentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaCobroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.divisaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -100,6 +101,52 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(470, 212);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // nifDataGridViewTextBoxColumn
+            // 
+            this.nifDataGridViewTextBoxColumn.DataPropertyName = "nif";
+            this.nifDataGridViewTextBoxColumn.HeaderText = "nif";
+            this.nifDataGridViewTextBoxColumn.Name = "nifDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "direccion";
+            this.direccionDataGridViewTextBoxColumn.HeaderText = "direccion";
+            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            // 
+            // descuentoDefentoDataGridViewTextBoxColumn
+            // 
+            this.descuentoDefentoDataGridViewTextBoxColumn.DataPropertyName = "descuento defento";
+            this.descuentoDefentoDataGridViewTextBoxColumn.HeaderText = "descuento defento";
+            this.descuentoDefentoDataGridViewTextBoxColumn.Name = "descuentoDefentoDataGridViewTextBoxColumn";
+            // 
+            // diaCobroDataGridViewTextBoxColumn
+            // 
+            this.diaCobroDataGridViewTextBoxColumn.DataPropertyName = "dia cobro";
+            this.diaCobroDataGridViewTextBoxColumn.HeaderText = "dia cobro";
+            this.diaCobroDataGridViewTextBoxColumn.Name = "diaCobroDataGridViewTextBoxColumn";
+            // 
+            // divisaDataGridViewTextBoxColumn
+            // 
+            this.divisaDataGridViewTextBoxColumn.DataPropertyName = "divisa";
+            this.divisaDataGridViewTextBoxColumn.HeaderText = "divisa";
+            this.divisaDataGridViewTextBoxColumn.Name = "divisaDataGridViewTextBoxColumn";
+            // 
+            // proveedorBindingSource
+            // 
+            this.proveedorBindingSource.DataMember = "Proveedor";
+            this.proveedorBindingSource.DataSource = this.baseDatosDataSet1;
+            // 
+            // baseDatosDataSet1
+            // 
+            this.baseDatosDataSet1.DataSetName = "BaseDatosDataSet1";
+            this.baseDatosDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox1
             // 
@@ -164,55 +211,9 @@
             this.baseDatosDataSetBindingSource.DataSource = this.baseDatosDataSet;
             this.baseDatosDataSetBindingSource.Position = 0;
             // 
-            // baseDatosDataSet1
-            // 
-            this.baseDatosDataSet1.DataSetName = "BaseDatosDataSet1";
-            this.baseDatosDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // proveedorBindingSource
-            // 
-            this.proveedorBindingSource.DataMember = "Proveedor";
-            this.proveedorBindingSource.DataSource = this.baseDatosDataSet1;
-            // 
             // proveedorTableAdapter
             // 
             this.proveedorTableAdapter.ClearBeforeFill = true;
-            // 
-            // nifDataGridViewTextBoxColumn
-            // 
-            this.nifDataGridViewTextBoxColumn.DataPropertyName = "nif";
-            this.nifDataGridViewTextBoxColumn.HeaderText = "nif";
-            this.nifDataGridViewTextBoxColumn.Name = "nifDataGridViewTextBoxColumn";
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            // 
-            // direccionDataGridViewTextBoxColumn
-            // 
-            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "direccion";
-            this.direccionDataGridViewTextBoxColumn.HeaderText = "direccion";
-            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
-            // 
-            // descuentoDefentoDataGridViewTextBoxColumn
-            // 
-            this.descuentoDefentoDataGridViewTextBoxColumn.DataPropertyName = "descuento defento";
-            this.descuentoDefentoDataGridViewTextBoxColumn.HeaderText = "descuento defento";
-            this.descuentoDefentoDataGridViewTextBoxColumn.Name = "descuentoDefentoDataGridViewTextBoxColumn";
-            // 
-            // diaCobroDataGridViewTextBoxColumn
-            // 
-            this.diaCobroDataGridViewTextBoxColumn.DataPropertyName = "dia cobro";
-            this.diaCobroDataGridViewTextBoxColumn.HeaderText = "dia cobro";
-            this.diaCobroDataGridViewTextBoxColumn.Name = "diaCobroDataGridViewTextBoxColumn";
-            // 
-            // divisaDataGridViewTextBoxColumn
-            // 
-            this.divisaDataGridViewTextBoxColumn.DataPropertyName = "divisa";
-            this.divisaDataGridViewTextBoxColumn.HeaderText = "divisa";
-            this.divisaDataGridViewTextBoxColumn.Name = "divisaDataGridViewTextBoxColumn";
             // 
             // PrincipalProveedores
             // 
@@ -223,17 +224,18 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PrincipalProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proveedores";
             this.Load += new System.EventHandler(this.PrincipalProveedores_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
