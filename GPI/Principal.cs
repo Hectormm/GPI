@@ -15,6 +15,9 @@ namespace GPI
         public Principal()
         {
             InitializeComponent();
+            toolTipLogin.SetToolTip(textBoxUsuario, "Usuario: Admin");
+            toolTipLogin.SetToolTip(textBoxPass, "Contraseña: Pass");
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,6 +59,70 @@ namespace GPI
         private void Principal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (textBoxUsuario.Text == "Admin" && textBoxPass.Text == "Pass")
+            {
+                groupBoxFunciones.Enabled = true;
+                textBoxUsuario.Text = "";
+                textBoxPass.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrecto");
+                textBoxUsuario.Text = "";
+                textBoxPass.Text = "";
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            groupBoxFunciones.Enabled = false;
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            PrincipalClientes cs = new PrincipalClientes();
+            cs.Show();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            PrincipalClientes cs = new PrincipalClientes();
+            cs.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+            PrincipalProveedores pp = new PrincipalProveedores();
+            pp.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            PrincipalArticulos pa = new PrincipalArticulos();
+            pa.Show();
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+            PrincipalArticulos pa = new PrincipalArticulos();
+            pa.Show();
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            PrincipalProveedores pp = new PrincipalProveedores();
+            pp.Show();
         }
     }
 }
