@@ -1,6 +1,6 @@
 ﻿namespace GPI
 {
-    partial class Articulos
+    partial class PrincipalArticulos
     {
         /// <summary>
         /// Required designer variable.
