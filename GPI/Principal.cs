@@ -25,7 +25,7 @@ namespace GPI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Proveedores prove = new Proveedores();
+            PrincipalProveedores prove = new PrincipalProveedores();
             prove.Show();
         }
 
@@ -43,7 +43,7 @@ namespace GPI
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Proveedores prove = new Proveedores();
+            PrincipalProveedores prove = new PrincipalProveedores();
             prove.Show();
         }
 
