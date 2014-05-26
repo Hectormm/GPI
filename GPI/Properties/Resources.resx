@@ -121,6 +121,9 @@
   <data name="icono_clientes2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono_clientes2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="palet_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\palet_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="proveedores_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\proveedores_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

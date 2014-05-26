@@ -34,5 +34,28 @@ namespace GPI
             PrincipalArticulos artic = new PrincipalArticulos();
             artic.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            PrincipalClientes cliente = new PrincipalClientes();
+            cliente.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Proveedores prove = new Proveedores();
+            prove.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            PrincipalArticulos artic = new PrincipalArticulos();
+            artic.Show();
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

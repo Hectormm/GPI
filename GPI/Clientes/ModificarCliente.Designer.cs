@@ -302,6 +302,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ModificarCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarCliente";
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
