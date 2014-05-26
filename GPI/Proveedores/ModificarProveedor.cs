@@ -21,5 +21,11 @@ namespace GPI.Proveedores
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Proveedor " + textBox2.Text + " modificado correctamente");
+            this.Close();
+        }
     }
 }

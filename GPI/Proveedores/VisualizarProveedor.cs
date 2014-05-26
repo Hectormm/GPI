@@ -21,5 +21,17 @@ namespace GPI.Proveedores
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ModificarProveedor pantalla = new ModificarProveedor();
+            pantalla.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¿Quiere Eliminar el proveedor seleccionado?");
+        }
     }
 }

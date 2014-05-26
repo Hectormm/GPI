@@ -21,5 +21,11 @@ namespace GPI.Articulos
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Articulo " + textBox2.Text + " modificado correctamente");
+            this.Close();
+        }
     }
 }

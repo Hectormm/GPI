@@ -139,6 +139,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox2);
             this.Name = "PrincipalArticulos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Articulos";
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

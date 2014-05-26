@@ -21,5 +21,17 @@ namespace GPI.Articulos
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ModificarArticulo pantalla = new ModificarArticulo();
+            pantalla.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¿Quiere Eliminar el articulo seleccionado?");
+        }
     }
 }
