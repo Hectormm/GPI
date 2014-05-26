@@ -69,7 +69,7 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(13, 285);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(476, 72);
+            this.groupBox1.Size = new System.Drawing.Size(793, 72);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Acciones";
@@ -119,7 +119,7 @@
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Location = new System.Drawing.Point(12, 42);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(477, 237);
+            this.groupBox2.Size = new System.Drawing.Size(794, 237);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Clientes";
@@ -127,6 +127,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nIFDataGridViewTextBoxColumn,
@@ -142,9 +143,10 @@
             this.datosContablesDataGridViewTextBoxColumn,
             this.direccionesDeEnvioDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.clienteBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 19);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(463, 212);
+            this.dataGridView1.Size = new System.Drawing.Size(788, 218);
             this.dataGridView1.TabIndex = 0;
             // 
             // nIFDataGridViewTextBoxColumn
@@ -231,7 +233,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(414, 12);
+            this.button5.Location = new System.Drawing.Point(731, 12);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 2;
@@ -242,7 +244,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(13, 14);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(395, 20);
+            this.textBox1.Size = new System.Drawing.Size(715, 20);
             this.textBox1.TabIndex = 3;
             // 
             // clienteTableAdapter
@@ -253,7 +255,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 365);
+            this.ClientSize = new System.Drawing.Size(821, 365);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox2);
