@@ -206,7 +206,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "ModificarProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ModificarProveedor";
+            this.Text = "Modificar Proveedor";
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

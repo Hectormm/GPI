@@ -241,7 +241,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "AltaArticulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alta Articulo";
+            this.Text = "Crear Articulo";
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

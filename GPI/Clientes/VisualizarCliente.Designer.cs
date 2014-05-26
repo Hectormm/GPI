@@ -329,7 +329,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "VisualizarCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "VisualizarCliente";
+            this.Text = "Ver Cliente";
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

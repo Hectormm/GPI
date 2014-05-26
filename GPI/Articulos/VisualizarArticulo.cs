@@ -32,6 +32,7 @@ namespace GPI.Articulos
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("¿Quiere Eliminar el articulo seleccionado?");
+            this.Close();
         }
     }
 }

@@ -32,6 +32,7 @@ namespace GPI.Proveedores
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("¿Quiere Eliminar el proveedor seleccionado?");
+            this.Close();
         }
     }
 }

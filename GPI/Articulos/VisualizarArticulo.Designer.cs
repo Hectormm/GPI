@@ -260,7 +260,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "VisualizarArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "VisualizarArticulo";
+            this.Text = "Ver Articulo";
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

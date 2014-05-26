@@ -224,7 +224,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "VisualizarProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "VisualizarProveedor";
+            this.Text = "Ver Proveedor";
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
