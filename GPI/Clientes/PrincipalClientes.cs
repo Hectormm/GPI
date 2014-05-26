@@ -40,5 +40,12 @@ namespace GPI
         {
             MessageBox.Show("¿Quiere Eliminar el cliente seleccionado?");
         }
+
+        private void PrincipalClientes_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'baseDatosDataSet.Cliente' Puede moverla o quitarla según sea necesario.
+            this.clienteTableAdapter.Fill(this.baseDatosDataSet.Cliente);
+
+        }
     }
 }

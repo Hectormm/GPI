@@ -96,6 +96,21 @@
     <Compile Include="Ayuda\MostrarAyuda.Designer.cs">
       <DependentUpon>MostrarAyuda.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaseDatosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseDatosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatosDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseDatosDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatosDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseDatosDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Clientes\AltaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +222,39 @@
     <EmbeddedResource Include="Proveedores\VisualizarProveedor.resx">
       <DependentUpon>VisualizarProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BaseDatosDataSet.xsc">
+      <DependentUpon>BaseDatosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BaseDatosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaseDatosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BaseDatosDataSet.xss">
+      <DependentUpon>BaseDatosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BaseDatosDataSet1.xsc">
+      <DependentUpon>BaseDatosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BaseDatosDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaseDatosDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BaseDatosDataSet1.xss">
+      <DependentUpon>BaseDatosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BaseDatosDataSet2.xsc">
+      <DependentUpon>BaseDatosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BaseDatosDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaseDatosDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BaseDatosDataSet2.xss">
+      <DependentUpon>BaseDatosDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

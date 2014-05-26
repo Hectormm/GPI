@@ -43,6 +43,8 @@ namespace GPI
 
         private void PrincipalArticulos_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'baseDatosDataSet2.Articulo' Puede moverla o quitarla según sea necesario.
+            this.articuloTableAdapter.Fill(this.baseDatosDataSet2.Articulo);
 
         }
     }

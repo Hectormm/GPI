@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -37,9 +38,26 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.baseDatosDataSet = new GPI.BaseDatosDataSet();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteTableAdapter = new GPI.BaseDatosDataSetTableAdapters.ClienteTableAdapter();
+            this.nIFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.provinciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datosBancariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diasDePagoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoDescuentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.riesgosMaximosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datosContablesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionesDeEnvioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -107,7 +125,22 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nIFDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.direccionDataGridViewTextBoxColumn,
+            this.provinciaDataGridViewTextBoxColumn,
+            this.telefonoDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.datosBancariosDataGridViewTextBoxColumn,
+            this.diasDePagoDataGridViewTextBoxColumn,
+            this.tipoDescuentoDataGridViewTextBoxColumn,
+            this.riesgosMaximosDataGridViewTextBoxColumn,
+            this.datosContablesDataGridViewTextBoxColumn,
+            this.direccionesDeEnvioDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.clienteBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(8, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(463, 212);
@@ -129,6 +162,92 @@
             this.textBox1.Size = new System.Drawing.Size(395, 20);
             this.textBox1.TabIndex = 3;
             // 
+            // baseDatosDataSet
+            // 
+            this.baseDatosDataSet.DataSetName = "BaseDatosDataSet";
+            this.baseDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.baseDatosDataSet;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // nIFDataGridViewTextBoxColumn
+            // 
+            this.nIFDataGridViewTextBoxColumn.DataPropertyName = "NIF";
+            this.nIFDataGridViewTextBoxColumn.HeaderText = "NIF";
+            this.nIFDataGridViewTextBoxColumn.Name = "nIFDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            // 
+            // provinciaDataGridViewTextBoxColumn
+            // 
+            this.provinciaDataGridViewTextBoxColumn.DataPropertyName = "Provincia";
+            this.provinciaDataGridViewTextBoxColumn.HeaderText = "Provincia";
+            this.provinciaDataGridViewTextBoxColumn.Name = "provinciaDataGridViewTextBoxColumn";
+            // 
+            // telefonoDataGridViewTextBoxColumn
+            // 
+            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // datosBancariosDataGridViewTextBoxColumn
+            // 
+            this.datosBancariosDataGridViewTextBoxColumn.DataPropertyName = "Datos Bancarios";
+            this.datosBancariosDataGridViewTextBoxColumn.HeaderText = "Datos Bancarios";
+            this.datosBancariosDataGridViewTextBoxColumn.Name = "datosBancariosDataGridViewTextBoxColumn";
+            // 
+            // diasDePagoDataGridViewTextBoxColumn
+            // 
+            this.diasDePagoDataGridViewTextBoxColumn.DataPropertyName = "Dias de Pago";
+            this.diasDePagoDataGridViewTextBoxColumn.HeaderText = "Dias de Pago";
+            this.diasDePagoDataGridViewTextBoxColumn.Name = "diasDePagoDataGridViewTextBoxColumn";
+            // 
+            // tipoDescuentoDataGridViewTextBoxColumn
+            // 
+            this.tipoDescuentoDataGridViewTextBoxColumn.DataPropertyName = "Tipo Descuento";
+            this.tipoDescuentoDataGridViewTextBoxColumn.HeaderText = "Tipo Descuento";
+            this.tipoDescuentoDataGridViewTextBoxColumn.Name = "tipoDescuentoDataGridViewTextBoxColumn";
+            // 
+            // riesgosMaximosDataGridViewTextBoxColumn
+            // 
+            this.riesgosMaximosDataGridViewTextBoxColumn.DataPropertyName = "Riesgos Maximos";
+            this.riesgosMaximosDataGridViewTextBoxColumn.HeaderText = "Riesgos Maximos";
+            this.riesgosMaximosDataGridViewTextBoxColumn.Name = "riesgosMaximosDataGridViewTextBoxColumn";
+            // 
+            // datosContablesDataGridViewTextBoxColumn
+            // 
+            this.datosContablesDataGridViewTextBoxColumn.DataPropertyName = "Datos Contables";
+            this.datosContablesDataGridViewTextBoxColumn.HeaderText = "Datos Contables";
+            this.datosContablesDataGridViewTextBoxColumn.Name = "datosContablesDataGridViewTextBoxColumn";
+            // 
+            // direccionesDeEnvioDataGridViewTextBoxColumn
+            // 
+            this.direccionesDeEnvioDataGridViewTextBoxColumn.DataPropertyName = "Direcciones de envio";
+            this.direccionesDeEnvioDataGridViewTextBoxColumn.HeaderText = "Direcciones de envio";
+            this.direccionesDeEnvioDataGridViewTextBoxColumn.Name = "direccionesDeEnvioDataGridViewTextBoxColumn";
+            // 
             // PrincipalClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,9 +260,12 @@
             this.Name = "PrincipalClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.PrincipalClientes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +282,20 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox1;
+        private BaseDatosDataSet baseDatosDataSet;
+        private System.Windows.Forms.BindingSource clienteBindingSource;
+        private BaseDatosDataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nIFDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn provinciaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datosBancariosDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diasDePagoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoDescuentoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn riesgosMaximosDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datosContablesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionesDeEnvioDataGridViewTextBoxColumn;
     }
 }

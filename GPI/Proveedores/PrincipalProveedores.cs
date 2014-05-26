@@ -40,5 +40,12 @@ namespace GPI
         {
             MessageBox.Show("¿Quiere Eliminar el proveedor seleccionado?");
         }
+
+        private void PrincipalProveedores_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'baseDatosDataSet1.Proveedor' Puede moverla o quitarla según sea necesario.
+            this.proveedorTableAdapter.Fill(this.baseDatosDataSet1.Proveedor);
+
+        }
     }
 }
