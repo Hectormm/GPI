@@ -57,11 +57,11 @@
     <Compile Include="Articulos\Articulos.Designer.cs">
       <DependentUpon>Articulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Articulos\ModificarCliente.cs">
+    <Compile Include="Articulos\ModificarArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Articulos\ModificarCliente.Designer.cs">
-      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    <Compile Include="Articulos\ModificarArticulo.Designer.cs">
+      <DependentUpon>ModificarArticulo.cs</DependentUpon>
     </Compile>
     <Compile Include="Clientes\AltaCliente.cs">
       <SubType>Form</SubType>
@@ -107,8 +107,8 @@
     <EmbeddedResource Include="Articulos\Articulos.resx">
       <DependentUpon>Articulos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Articulos\ModificarCliente.resx">
-      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Articulos\ModificarArticulo.resx">
+      <DependentUpon>ModificarArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
