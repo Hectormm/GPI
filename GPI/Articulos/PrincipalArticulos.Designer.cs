@@ -37,14 +37,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioCoste = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IVAAplicado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Activo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -80,15 +72,6 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.Nombre,
-            this.Cantidad,
-            this.Descripción,
-            this.PrecioCoste,
-            this.PrecioVenta,
-            this.IVAAplicado,
-            this.Activo});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 16);
             this.dataGridView1.Name = "dataGridView1";
@@ -114,7 +97,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(110, 40);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Modificar Cliente";
+            this.button4.Text = "Modificar Articulo";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -124,7 +107,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 40);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Visualizar Cliente";
+            this.button3.Text = "Visualizar Articulo";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -134,7 +117,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 40);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Baja Cliente";
+            this.button2.Text = "Baja Articulo";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -144,49 +127,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 40);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Alta Cliente";
+            this.button1.Text = "Alta Articulo";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Descripción
-            // 
-            this.Descripción.HeaderText = "Descripción";
-            this.Descripción.Name = "Descripción";
-            // 
-            // PrecioCoste
-            // 
-            this.PrecioCoste.HeaderText = "P.Coste";
-            this.PrecioCoste.Name = "PrecioCoste";
-            // 
-            // PrecioVenta
-            // 
-            this.PrecioVenta.HeaderText = "P.Venta";
-            this.PrecioVenta.Name = "PrecioVenta";
-            // 
-            // IVAAplicado
-            // 
-            this.IVAAplicado.HeaderText = "IVA";
-            this.IVAAplicado.Name = "IVAAplicado";
-            // 
-            // Activo
-            // 
-            this.Activo.HeaderText = "Activo";
-            this.Activo.Name = "Activo";
             // 
             // PrincipalArticulos
             // 
@@ -220,13 +163,5 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioCoste;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioVenta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IVAAplicado;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Activo;
     }
 }

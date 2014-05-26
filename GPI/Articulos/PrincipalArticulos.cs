@@ -16,14 +16,6 @@ namespace GPI
         public PrincipalArticulos()
         {
             InitializeComponent();
-            inicializarArticulos();
-        }
-
-        private void inicializarArticulos()
-        {
-            dataGridView1.Rows.Add("1", "nombre", "5", "descripcion", "coste", "venta", "iva", true);
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
