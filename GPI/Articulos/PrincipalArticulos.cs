@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GPI.Articulos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +20,25 @@ namespace GPI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //AltaArticulos pantalla = new AltaArticulos();
-            //pantalla.show();
+            AltaArticulos pantalla = new AltaArticulos();
+            pantalla.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            VisualizarArticulo pantalla = new VisualizarArticulo();
+            pantalla.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ModificarArticulo pantalla = new ModificarArticulo();
+            pantalla.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¿Quiere Eliminar el articulo seleccionado?");
         }
     }
 }
