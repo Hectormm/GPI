@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrincipalClientes));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -36,11 +37,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.baseDatosDataSet = new GPI.BaseDatosDataSet();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter = new GPI.BaseDatosDataSetTableAdapters.ClienteTableAdapter();
             this.nIFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,11 +49,16 @@
             this.riesgosMaximosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datosContablesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionesDeEnvioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.baseDatosDataSet = new GPI.BaseDatosDataSet();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.clienteTableAdapter = new GPI.BaseDatosDataSetTableAdapters.ClienteTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -146,36 +147,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(463, 212);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(414, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(395, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // baseDatosDataSet
-            // 
-            this.baseDatosDataSet.DataSetName = "BaseDatosDataSet";
-            this.baseDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.baseDatosDataSet;
-            // 
-            // clienteTableAdapter
-            // 
-            this.clienteTableAdapter.ClearBeforeFill = true;
-            // 
             // nIFDataGridViewTextBoxColumn
             // 
             this.nIFDataGridViewTextBoxColumn.DataPropertyName = "NIF";
@@ -248,6 +219,36 @@
             this.direccionesDeEnvioDataGridViewTextBoxColumn.HeaderText = "Direcciones de envio";
             this.direccionesDeEnvioDataGridViewTextBoxColumn.Name = "direccionesDeEnvioDataGridViewTextBoxColumn";
             // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.baseDatosDataSet;
+            // 
+            // baseDatosDataSet
+            // 
+            this.baseDatosDataSet.DataSetName = "BaseDatosDataSet";
+            this.baseDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(414, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Buscar";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 14);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(395, 20);
+            this.textBox1.TabIndex = 3;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
+            // 
             // PrincipalClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +258,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PrincipalClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
@@ -264,8 +266,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baseDatosDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
