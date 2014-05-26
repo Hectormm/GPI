@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GPI.Articulos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +11,17 @@ using System.Windows.Forms;
 
 namespace GPI
 {
-    public partial class Articulos : Form
+    public partial class PrincipalArticulos : Form
     {
-        public Articulos()
+        public PrincipalArticulos()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            //AltaArticulos pantalla = new AltaArticulos();
+            //pantalla.show();
         }
     }
 }
