@@ -69,6 +69,18 @@
     <Compile Include="Articulos\VisualizarArticulo.Designer.cs">
       <DependentUpon>VisualizarArticulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ayuda\AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\MostrarAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\MostrarAyuda.Designer.cs">
+      <DependentUpon>MostrarAyuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes\AltaCliente.cs">
       <SubType>Form</SubType>
     </Compile>

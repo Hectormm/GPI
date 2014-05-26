@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GPI.Ayuda;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -123,6 +124,23 @@ namespace GPI
         {
             PrincipalProveedores pp = new PrincipalProveedores();
             pp.Show();
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void verLaAyudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MostrarAyuda ay = new MostrarAyuda();
+            ay.Show();
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AcercaDe ad = new AcercaDe();
+            ad.Show();
         }
     }
 }
