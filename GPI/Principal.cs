@@ -102,8 +102,9 @@ namespace GPI
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            //PrincipalProveedores pp = new PrincipalProveedores();
-           // pp.Show();
+
+            PrincipalProveedores pp = new PrincipalProveedores();
+            pp.Show();
         }
 
         private void button3_Click_1(object sender, EventArgs e)
@@ -116,6 +117,12 @@ namespace GPI
         {
             PrincipalArticulos pa = new PrincipalArticulos();
             pa.Show();
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            PrincipalProveedores pp = new PrincipalProveedores();
+            pp.Show();
         }
     }
 }
