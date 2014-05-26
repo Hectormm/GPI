@@ -69,11 +69,11 @@
     <Compile Include="Clientes\AltaCliente.Designer.cs">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Clientes\Clientes.cs">
+    <Compile Include="Clientes\PrincipalClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Clientes\Clientes.Designer.cs">
-      <DependentUpon>Clientes.cs</DependentUpon>
+    <Compile Include="Clientes\PrincipalClientes.Designer.cs">
+      <DependentUpon>PrincipalClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Clientes\ModificarCliente.cs">
       <SubType>Form</SubType>
@@ -95,11 +95,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proveedores\Proveedores.cs">
+    <Compile Include="Proveedores\PrincipalProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Proveedores\Proveedores.Designer.cs">
-      <DependentUpon>Proveedores.cs</DependentUpon>
+    <Compile Include="Proveedores\PrincipalProveedores.Designer.cs">
+      <DependentUpon>PrincipalProveedores.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Articulos\AltaArticulos.resx">
       <DependentUpon>AltaArticulos.cs</DependentUpon>
@@ -113,11 +113,14 @@
     <EmbeddedResource Include="Clientes\AltaCliente.resx">
       <DependentUpon>AltaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Clientes\Clientes.resx">
-      <DependentUpon>Clientes.cs</DependentUpon>
+    <EmbeddedResource Include="Clientes\PrincipalClientes.resx">
+      <DependentUpon>PrincipalClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\VisualizarCliente.resx">
+      <DependentUpon>VisualizarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -131,8 +134,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Proveedores\Proveedores.resx">
-      <DependentUpon>Proveedores.cs</DependentUpon>
+    <EmbeddedResource Include="Proveedores\PrincipalProveedores.resx">
+      <DependentUpon>PrincipalProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

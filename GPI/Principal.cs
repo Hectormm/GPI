@@ -19,7 +19,7 @@ namespace GPI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Clientes cliente = new Clientes();
+            PrincipalClientes cliente = new PrincipalClientes();
             cliente.Show();
         }
 
