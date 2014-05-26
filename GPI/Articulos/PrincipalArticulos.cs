@@ -16,6 +16,14 @@ namespace GPI
         public PrincipalArticulos()
         {
             InitializeComponent();
+            inicializarArticulos();
+        }
+
+        private void inicializarArticulos()
+        {
+            dataGridView1.Rows.Add("1", "nombre", "5", "descripcion", "coste", "venta", "iva", true);
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,6 +47,11 @@ namespace GPI
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("¿Quiere Eliminar el articulo seleccionado?");
+        }
+
+        private void PrincipalArticulos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
